@@ -1,8 +1,8 @@
 {
   "name": "typescript blockchain - nomad",
   "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "api",
-  "workspaceFolder": "/api",
+  "service": "app",
+  "workspaceFolder": "/app",
   "settings": {
     "terminal.integrated.shell.linux": null
   },
