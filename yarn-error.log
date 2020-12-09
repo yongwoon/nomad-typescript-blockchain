@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /opt/yarn-v1.22.5/bin/yarn.js start
+
+PATH: 
+  /root/.vscode-server/bin/e5a624b788d92b8d34d1392e4c4d9789406efe8f/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.15.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /app/package.json: Unexpected token / in JSON at position 235
+      at JSON.parse (<anonymous>)
+      at /opt/yarn-v1.22.5/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/opt/yarn-v1.22.5/lib/cli.js:310:30)
+      at /opt/yarn-v1.22.5/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "typechain",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:yongwoon/nomad-typescript-blockchain.git",
+    "author": "yongwoon kim <yonyon.japan@gmail.com>",
+    "license": "MIT",
+    "script": {
+      // yarn start 를 할 떄마다 yarn 은 prestart 를 먼저 실행하고 start 를 실행한다.
+      "start": "node index.js",
+      "prestart": "tsc"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

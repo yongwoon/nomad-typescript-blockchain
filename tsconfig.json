@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", // 단지 node.js 를 평범하게 사용하고 다양한걸 import, export 할 수 있게 한다.
+    "target": "ES2015", // 어떤 javascript 로 컴파일 할껀가
+    "sourceMap": true
+  },
+  //어떤 파일들이 컴파일 과정에 포함되는지 typescript 에게 알려줄거다
+  "include": ["index.ts"],
+  "exclude": ["node_modules"]
+}
