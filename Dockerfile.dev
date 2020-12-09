@@ -1,0 +1,10 @@
+FROM node:14.15.1-alpine
+
+ENV APP_ROOT /app
+
+RUN apk update && \
+  apk add git bash
+
+WORKDIR $APP_ROOT
+
+EXPOSE 3000
