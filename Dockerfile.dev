@@ -7,4 +7,6 @@ RUN apk update && \
 
 WORKDIR $APP_ROOT
 
+RUN yarn install && yarn global add typescript
+
 EXPOSE 3000

@@ -6,10 +6,6 @@
 yarn init
 ```
 
-```bash
-yarn global add typescript
-```
-
 ## tsc
 
 - Nodejs 는 typescript 를 이햐하지 못하기 떄문에 일반적인 javascript 코드로 컴파일하는 작업이 필요하다.
