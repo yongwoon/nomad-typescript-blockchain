@@ -1,11 +1,23 @@
 // How to execute ?
 // yarn start
 
-const sayHi = (name: string, age: number, gender: string): string => {
-  return `Hello ${name}, your are ${age}, you are a ${gender}`
+interface Human {
+  name: string,
+  age: number,
+  gender: string
 }
 
-sayHi("yongwoon", 30, "male")
+const person: Human = {
+  name: "yongwoon kim",
+  age: 30,
+  gender: "male"
+};
+
+const sayHi = (persion: Human): string => {
+  return `Hello ${persion.name}, your are ${persion.age}, you are a ${persion.gender}`;
+}
+
+console.log(sayHi(person))
 
 
 // export 하므로서 module 로 사용가능하다.
